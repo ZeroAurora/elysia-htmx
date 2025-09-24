@@ -1,0 +1,22 @@
+{
+  "name": "elysia-htmx",
+  "type": "module",
+  "module": "dist/index.js",
+  "scripts": {
+    "build": "tsup",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix"
+  },
+  "peerDependencies": {
+    "@elysiajs/html": ">=1.4.0 <2.0.0",
+    "elysia": ">=1.4.0 <2.0.0",
+    "typescript": "^5"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^5.4.1",
+    "@types/bun": "latest",
+    "eslint": "^9.36.0",
+    "eslint-plugin-format": "^1.0.1",
+    "tsup": "^8.5.0"
+  }
+}
