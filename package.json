@@ -29,7 +29,7 @@
     "build": "tsup",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "bun run build"
   },
   "peerDependencies": {
     "@elysiajs/html": ">=1.4.0 <2.0.0",
