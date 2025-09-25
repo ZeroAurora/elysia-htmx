@@ -1,15 +1,11 @@
 # elysia-htmx
 
-To install dependencies:
+Make it easier to use HTMX headers with Elysia.
 
-```bash
-bun install
-```
+## Usage
 
-To run:
+Refer to `example/` for now. Full docs coming later!
 
-```bash
-bun run index.ts
-```
+## License
 
-This project was created using `bun init` in bun v1.2.22. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+MIT
