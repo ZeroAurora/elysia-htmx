@@ -120,20 +120,20 @@ export interface HtmxResponseOptions {
  * @returns the HTMX request options or null if not an HTMX request
  */
 export function createHtmxRequestOptions(headers: Record<string, string | undefined>): HtmxRequestOptions | null {
-  if (headers['HX-Request'] !== 'true')
+  if (headers['hx-request'] !== 'true')
     return null
 
-  if (!headers['HX-Current-URL'])
+  if (!headers['hx-current-url'])
     throw new Error('Unreachable: HX-Current-URL is not present while HX-Request is true.')
 
   return {
-    boosted: headers['HX-Boosted'] === 'true',
-    currentUrl: new URL(headers['HX-Current-URL']!),
-    historyRestoreRequest: headers['HX-History-Restore-Request'] === 'true',
-    prompt: headers['HX-Prompt'] ?? null,
-    target: headers['HX-Target'] ?? null,
-    trigger: headers['HX-Trigger'] ?? null,
-    triggerName: headers['HX-Trigger-Name'] ?? null,
+    boosted: headers['hx-boosted'] === 'true',
+    currentUrl: new URL(headers['hx-current-url']!),
+    historyRestoreRequest: headers['hx-history-restore-request'] === 'true',
+    prompt: headers['hx-prompt'] ?? null,
+    target: headers['hx-target'] ?? null,
+    trigger: headers['hx-trigger'] ?? null,
+    triggerName: headers['hx-trigger-name'] ?? null,
   }
 }
 
