@@ -1,12 +1,35 @@
 {
-  "name": "elysia-htmx",
+  "name": "@zeroaurora/elysia-htmx",
   "type": "module",
   "version": "0.1.1",
+  "description": "Make it easier to use HTMX headers with Elysia",
+  "author": "ZeroAurora",
+  "license": "MIT",
+  "homepage": "https://github.com/ZeroAurora/elysia-htmx",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZeroAurora/elysia-htmx.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ZeroAurora/elysia-htmx/issues"
+  },
+  "keywords": ["elysia", "htmx", "typescript", "web", "framework"],
+  "main": "dist/index.js",
   "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsup",
     "lint": "eslint",
-    "lint:fix": "eslint --fix"
+    "lint:fix": "eslint --fix",
+    "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
     "@elysiajs/html": ">=1.4.0 <2.0.0",
