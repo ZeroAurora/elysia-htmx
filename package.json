@@ -1,6 +1,7 @@
 {
   "name": "elysia-htmx",
   "type": "module",
+  "version": "0.1.0",
   "module": "dist/index.js",
   "scripts": {
     "build": "tsup",
